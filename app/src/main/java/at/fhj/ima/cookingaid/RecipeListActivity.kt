@@ -8,4 +8,5 @@ class RecipeListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_list)
     }
+    // isabelles branch?
 }
