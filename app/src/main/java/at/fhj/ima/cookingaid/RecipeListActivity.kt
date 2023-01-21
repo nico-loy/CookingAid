@@ -12,7 +12,7 @@ class RecipeListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recipe_list)
     }
 
-    override fun onCreate(
+ /*   override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 ): View? {
@@ -20,4 +20,6 @@ class RecipeListActivity : AppCompatActivity() {
 
         return view
     }
+
+  */
 }
