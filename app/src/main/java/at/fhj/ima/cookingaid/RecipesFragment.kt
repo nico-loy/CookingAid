@@ -63,11 +63,11 @@ class RecipesFragment : Fragment() {
                     Toast.makeText(
                         requireContext(),
                         "Loading",
-                        Toast.LENGTH_SHORT)
-                        .show()
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
-        }
+        })
     }
 
     private fun applyQueries(): HashMap<String, String> {
