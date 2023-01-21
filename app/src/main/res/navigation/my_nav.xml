@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/recipesFragment2">
+    <fragment
+        android:id="@+id/recipesFragment2"
+        android:name="at.fhj.ima.cookingaid.recipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" />
+</navigation>
