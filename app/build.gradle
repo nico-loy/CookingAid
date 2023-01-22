@@ -7,7 +7,7 @@ apply plugin: 'dagger.hilt.android.plugin'
 
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 30
     buildToolsVersion "30.0.0"
     //namespace 'at.fhj.ima.cookingaid'
 
@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId "at.fhj.ima.cookingaid"
         minSdkVersion 23
-        targetSdkVersion 33
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -31,7 +31,9 @@ android {
 
     buildFeatures {
         dataBinding true
+        viewBinding true
     }
+
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -70,8 +72,8 @@ dependencies {
     androidTestImplementation "androidx.room:room-testing:2.2.5"
 
     // Data binding
-    kapt "com.android.databinding:compiler:3.2.0-alpha10"
-    kapt "androidx.databinding:databinding-common:4.1.1"
+    kapt "com.android.databinding:compiler:4.1.1"
+    kapt "androidx.databinding:databinding-common:7.4.0"
 
     // DataStore
     implementation "androidx.datastore:datastore-preferences:1.0.0-alpha02"
@@ -114,3 +116,22 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.13.1'
 
 }
+
+/*
+//groovy
+configurations.all {
+    resolutionStrategy.force "org.antlr:antlr4-runtime:4.5.3"
+    resolutionStrategy.force "org.antlr:antlr4-tool:4.5.3"
+}
+
+//kotlin DSL
+configurations.all {
+    resolutionStrategy {
+        force("org.antlr:antlr4-runtime:4.5.3")
+        force("org.antlr:antlr4-tool:4.5.3")
+    }
+
+
+}
+
+*/

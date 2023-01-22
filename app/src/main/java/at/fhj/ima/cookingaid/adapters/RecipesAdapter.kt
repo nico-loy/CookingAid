@@ -4,8 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import at.fhj.ima.cookingaid.databinding.RecipeRowLayoutBinding
+import at.fh.mappdev.loggingviewsandactivity.databinding.RecipeRowLayoutBinding
 import at.fhj.ima.cookingaid.models.FoodRecipe
+import at.fhj.ima.cookingaid.models.Result
 import at.fhj.ima.cookingaid.util.RecipesDiffUtil
 
 class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {

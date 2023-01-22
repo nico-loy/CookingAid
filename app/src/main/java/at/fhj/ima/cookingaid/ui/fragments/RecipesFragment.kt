@@ -1,4 +1,4 @@
-package at.fhj.ima.cookingaid
+package at.fhj.ima.cookingaid.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.get
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import at.fh.mappdev.loggingviewsandactivity.R
+import at.fhj.ima.cookingaid.MainViewModel
 import at.fhj.ima.cookingaid.adapters.RecipesAdapter
-import at.fhj.ima.cookingaid.ui.MainActivity
 import at.fhj.ima.cookingaid.util.Constants.Companion.API_KEY
 import at.fhj.ima.cookingaid.util.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint

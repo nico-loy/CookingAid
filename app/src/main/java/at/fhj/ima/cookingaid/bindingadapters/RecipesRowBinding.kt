@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
-import at.fhj.ima.cookingaid.R
+import at.fh.mappdev.loggingviewsandactivity.R
 import coil.load
 
 class RecipesRowBinding {

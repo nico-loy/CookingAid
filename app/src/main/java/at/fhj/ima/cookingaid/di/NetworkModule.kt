@@ -16,12 +16,13 @@ import javax.inject.Singleton
 @InstallIn(ActivityComponent::class)
 object NetworkModule {
 
-    fun provideHttpClient(): OkHttpClient {
+    @Singleton
+    @Provides
+    fun provideHttpClient() : OkHttpClient {
         return OkHttpClient.Builder()
             .readTimeout(15, TimeUnit.SECONDS)
             .connectTimeout(15, TimeUnit.SECONDS)
             .build()
-
     }
 
     @Singleton
@@ -33,8 +34,8 @@ object NetworkModule {
     @Singleton
     @Provides
     fun provideRetrofitInstance(
-       okHttpClient: OkHttpClient,
-       gsonConverterFactory: GsonConverterFactory
+        okHttpClient: OkHttpClient,
+        gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -45,7 +46,8 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideApiService(retrofit: Retrofit): FoodRecipesApi{
+    fun provideApiService(retrofit: Retrofit): FoodRecipesApi {
         return retrofit.create(FoodRecipesApi::class.java)
     }
+
 }
