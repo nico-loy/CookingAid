@@ -4,7 +4,6 @@ import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
@@ -13,7 +12,7 @@ import at.fhj.ima.cookingaid.util.NetworkResult
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-class MainViewModel @ViewModelInject constructor(
+class MainViewModel  constructor(
     private val repository: Repository,
     application: Application
 ): AndroidViewModel(application) {

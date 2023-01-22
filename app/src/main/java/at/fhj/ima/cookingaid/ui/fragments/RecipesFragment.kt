@@ -9,8 +9,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import at.fh.mappdev.loggingviewsandactivity.R
 import at.fhj.ima.cookingaid.MainViewModel
+import at.fhj.ima.cookingaid.R
 import at.fhj.ima.cookingaid.adapters.RecipesAdapter
 import at.fhj.ima.cookingaid.util.Constants.Companion.API_KEY
 import at.fhj.ima.cookingaid.util.NetworkResult
@@ -40,12 +40,12 @@ class RecipesFragment : Fragment() {
         recyclerview.adapter = mAdapter
         recyclerview.layoutManager = LinearLayoutManager(requireContext())
 
-        requestApiData()
+        //requestApiData()
 
         return mView
     }
 
-    private fun requestApiData() {
+    /*private fun requestApiData() {
         mainViewModel.getRecipes(applyQueries())
         mainViewModel.recipeResponse.observe(viewLifecycleOwner, { response ->
             when (response) {
@@ -68,7 +68,7 @@ class RecipesFragment : Fragment() {
                 }
             }
         })
-    }
+    }*/
 
     private fun applyQueries(): HashMap<String, String> {
         val queries: HashMap<String, String> = HashMap()

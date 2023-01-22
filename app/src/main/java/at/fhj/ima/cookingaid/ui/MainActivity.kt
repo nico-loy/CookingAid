@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import at.fh.mappdev.loggingviewsandactivity.R
+import at.fhj.ima.cookingaid.R
 import dagger.hilt.android.AndroidEntryPoint
 
 
