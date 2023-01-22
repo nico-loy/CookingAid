@@ -45,7 +45,7 @@ class RecipesFragment : Fragment() {
         return mView
     }
 
-    /*private fun requestApiData() {
+    private fun requestApiData() {
         mainViewModel.getRecipes(applyQueries())
         mainViewModel.recipeResponse.observe(viewLifecycleOwner, { response ->
             when (response) {
@@ -68,7 +68,7 @@ class RecipesFragment : Fragment() {
                 }
             }
         })
-    }*/
+    }
 
     private fun applyQueries(): HashMap<String, String> {
         val queries: HashMap<String, String> = HashMap()

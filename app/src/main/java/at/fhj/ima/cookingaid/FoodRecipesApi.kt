@@ -1,6 +1,7 @@
 package at.fhj.ima.cookingaid
 
 import at.fhj.ima.cookingaid.models.FoodRecipe
+import dagger.Provides
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
