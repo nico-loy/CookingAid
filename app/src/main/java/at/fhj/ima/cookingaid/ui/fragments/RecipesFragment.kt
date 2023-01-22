@@ -15,6 +15,7 @@ import at.fhj.ima.cookingaid.adapters.RecipesAdapter
 import at.fhj.ima.cookingaid.util.Constants.Companion.API_KEY
 import at.fhj.ima.cookingaid.util.NetworkResult
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 
 @AndroidEntryPoint
